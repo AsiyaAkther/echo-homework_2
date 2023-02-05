@@ -1,0 +1,301 @@
+/* ======= common styles start ======= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+}
+.section_heading{
+    text-align: center;
+}
+.section_heading .section_top_text{
+    background-color: #fef0da;
+    padding: 5px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+.section_heading .section_top_text span{
+    font-size: 12px;
+    color: #fbb244;
+    font-weight: 700;
+}
+.section_heading h2{
+    font-size: 40px;
+    color: #081158;
+    margin-bottom: 15px;
+}
+.section_heading p{
+    width: 450px;
+    margin: 0 auto;
+}
+.mb{
+    margin-bottom: 20px;
+}
+/* ======= common styles end ======= */
+
+/* ======= menubar styles start ======= */
+.header{
+    background-image: url(../images/header_bg.svg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.header .menubar{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.header .menubar .logo{
+    width: 20%;
+}
+.header .menubar .logo img{
+    width: 80px;
+}
+.header .menubar .navbar{
+    width: 60%;
+}
+.header .menubar .navbar ul{
+    list-style-type: none;
+}
+.header .menubar .navbar ul li{
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    float: left;
+}
+.header .menubar .navbar ul li a{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all ease-in-out 0.5s;
+}
+.header .menubar .navbar ul li a:hover{
+    color: #081158;
+}
+.header .menubar .navbar ul ul{
+    display: none;
+}
+.header .menubar .navbar ul ul li{
+    background-color: #ffffff;
+    padding: 5px 20px;
+    width: 150px;
+}
+.header .menubar .navbar ul li:hover > ul{
+    display: block;
+}
+.header .menubar .header_btn_div{
+    width: 20%;
+    text-align: right;
+}
+.header .menubar .header_btn_div .header_btn{
+    background-color: #081158;
+    border: 1px solid #081158;
+    color: #fbb244;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    transition: all ease-in-out 0.5s;
+}
+.header .menubar .header_btn_div .header_btn:hover{
+    background-color: transparent;
+    color: #081158;
+}
+/* ======= menubar styles end ======= */
+
+/* ======= hero section styles start ======= */
+#hero{
+    padding: 50px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hero .hero_section_text{
+    width: 40%;
+    align-self: flex-start;
+}
+#hero .hero_section_text .welcome_text{
+    background-color: #fef0da;
+    width: 190px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+#hero .hero_section_text .welcome_text span{
+    font-size: 12px;
+    color: #fbb244;
+    font-weight: 700;
+}
+#hero .hero_section_text h1{
+    font-size: 45px;
+    color: #081158;
+    margin-bottom: 20px;
+}
+#hero .hero_section_text .hero_btn_div{
+    margin-top: 50px;
+}
+#hero .hero_section_text .hero_btn_div a{
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+}
+#hero .hero_section_text .hero_btn_div .work_btn{
+    background-color: #081158;
+    color: #ffffff;
+    border: 1px solid #081158;
+    margin-right: 20px;
+    transition: all ease-in-out 0.5s;
+}
+#hero .hero_section_text .hero_btn_div .work_btn:hover{
+    background-color: transparent;
+    color: #081158;
+}
+#hero .hero_section_text .hero_btn_div .contact_btn{
+    border: 1px solid #081158;
+    color: #081158;
+}
+#hero .hero_section_img{
+    width: 50%;
+}
+#hero .hero_section_img img{
+    width: 100%;
+}
+/* ======= hero section styles end ======= */
+
+/* ======= feature section styles start ======= */
+#feature{
+    padding: 100px;
+    background-color: #ffffff;
+    text-align: center;
+}
+#feature .feature_cards{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#feature .feature_cards .single_card{
+    width: 28%;
+}
+#feature .feature_cards .single_card .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+#feature .feature_cards .single_card .icon::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fdd8a1;
+}
+#feature .feature_cards .single_card .icon i{
+    font-size: 50px;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#feature .feature_cards .single_card h4{
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+/* ======= feature section styles end ======= */
+
+/* ======= about section styles start ======= */
+#about{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#about .about_img{
+    width: 50%;
+}
+#about .about_img img{
+    width: 100%;
+}
+#about .about_text{
+    width: 40%;
+}
+#about .about_text .section_heading h2{
+    width: 300px;
+    margin-bottom: 15px;
+}
+#about .about_text ul{
+    margin: 20px 0 40px 0;
+    list-style-type: none;
+}
+#about .about_text ul li{
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#about .about_text ul li i{
+    margin-right: 10px;
+}
+#about .about_text .about_btn{
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #081158;
+    color: #ffffff;
+    border: 1px solid #081158;
+    transition: all ease-in-out 0.5s;
+}
+#about .about_text .about_btn:hover{
+    background-color: transparent;
+    color: #081158;
+}
+/* ======= about section styles end ======= */
+
+/* ======= services section styles start ======= */
+#services{
+    padding: 100px;
+}
+#services .service_cards{
+    margin: 80px 80px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#services .service_cards .single_card{
+    width: 49%;
+}
+/* ======= services section styles end ======= */
+
+/* ======= Common styles start ======= */
+/* ======= Common styles start ======= */
+/* ======= Common styles start ======= */
+/* ======= Common styles start ======= */
