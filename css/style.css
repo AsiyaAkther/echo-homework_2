@@ -70,8 +70,23 @@ p{
 .header .menubar .logo img{
     width: 80px;
 }
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0,0,0,0.9);
+    position: absolute;
+    right: 160px;
+    bottom: 15px;
+    line-height: 0;
+}
+#check{
+    display: none;
+}
 .header .menubar .navbar{
     width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .header .menubar .navbar ul{
     list-style-type: none;
@@ -237,6 +252,7 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: #ffffff;
 }
 #about .about_img{
     width: 50%;
@@ -246,6 +262,9 @@ p{
 }
 #about .about_text{
     width: 40%;
+}
+#about .about_text .section_heading{
+    text-align: left;
 }
 #about .about_text .section_heading h2{
     width: 300px;
@@ -282,20 +301,690 @@ p{
 /* ======= services section styles start ======= */
 #services{
     padding: 100px;
+    background-color: #ffffff;
 }
 #services .service_cards{
-    margin: 80px 80px 0 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 #services .service_cards .single_card{
     width: 49%;
+    border: 1px solid #efefef;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+#services .service_cards .single_card .icon{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+#services .service_cards .single_card .icon::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fdd8a1;
+}
+#services .service_cards .single_card .icon i{
+    font-size: 50px;
+    color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#services .service_cards .single_card .text{
+    width: 70%;
+    float: right;
+}
+#services .service_cards .single_card .text h4{
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
 }
 /* ======= services section styles end ======= */
 
-/* ======= Common styles start ======= */
-/* ======= Common styles start ======= */
-/* ======= Common styles start ======= */
-/* ======= Common styles start ======= */
+/* ======= testimonial section styles start ======= */
+#testimonials{
+    padding: 100px;
+    background-color: #f8f9fa;
+}
+#testimonials .section_heading p{
+    width: 750px;
+}
+#testimonials .testimonioal_cards{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimonials .testimonioal_cards .single_card{
+    width: 32%;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 35px;
+}
+#testimonials .testimonioal_cards .single_card .text p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+#testimonials .testimonioal_cards .single_card .user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#testimonials .testimonioal_cards .single_card .user .user_img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#testimonials .testimonioal_cards .single_card .user .user_text{
+    margin-left: 30px;
+}
+#testimonials .testimonioal_cards .single_card .user .user_text h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+/* ======= testimonial section styles end ======= */
+
+/* ======= footer section styles start ======= */
+.footer{
+    background-color: #ffffff;
+    padding: 100px;
+}
+.footer .main_footer_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+.footer .main_footer_area .footer_part_one{
+    width: 40%;
+}
+.footer .main_footer_area .footer_part_one p{
+    width: 350px;
+    margin: 20px 0;
+}
+.footer .main_footer_area .footer_part_one .social_icons{
+    list-style-type: none;
+}
+.footer .main_footer_area .footer_part_one .social_icons li{
+    background-color: #081158;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+}
+.footer .main_footer_area .footer_part_one .social_icons li i{
+    color: #ffffff;
+}
+.footer .main_footer_area .footer_part_two, .footer .main_footer_area .footer_part_three{
+    width: 20%;
+}
+.footer .main_footer_area .footer_part_four{
+    width: 30%;
+}
+.footer .copyright{
+    text-align: center;
+}
+.footer .main_footer_area h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer .main_footer_area .footer_menu{
+    list-style-type: none;
+}
+.footer .main_footer_area .footer_menu li{
+    margin-bottom: 8px;
+}
+.footer .main_footer_area .footer_menu li a{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer .main_footer_area .footer_part_four ul{
+    list-style-type: none;
+}
+.footer .main_footer_area .footer_part_four ul li{
+    margin-bottom: 8px;
+}
+.footer .main_footer_area .footer_part_four ul li i{
+    margin-right: 5px;
+}
+.footer .main_footer_area .footer_part_four ul li a{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+/* ======= footer section styles end ======= */
+
+/* ======= small device responsive styles start ======= */
+@media (max-width: 600px){
+    /* ======= common styles start ======= */
+    .section_heading p{
+        width: 100%;
+    }
+
+    /* ======= menubar styles start ======= */
+    .header{
+        height: auto;
+    }
+    .header .menubar{
+        padding: 20px;
+    }
+    .header .menubar .logo{
+        width: auto;
+    }
+    .header .menubar .logo img{
+        width: auto;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .header .menubar .navbar{
+        width: auto;
+    }
+    .header .menubar .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #081158;
+        top: 55px;
+        left: -200%;
+        transition: all 0.5s;
+    }
+    .header .menubar .navbar ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 8px;
+        padding-left: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        padding: 0 0;
+    }
+    .header .menubar .navbar ul li a{
+        font-size: 18px;
+        color: #ffffff;
+    }
+    .header .menubar .header_btn_div{
+        width: auto;
+    }
+    .header .menubar .header_btn_div .header_btn{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    /* ======= hero section styles start ======= */
+    #hero{
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+    #hero .hero_section_text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #hero .hero_section_text h1{
+        font-size: 30px;
+        color: #081158;
+    }
+    #hero .hero_section_img{
+        width: 100%;
+    }
+
+    /* ======= feature section styles start ======= */
+    #feature{
+        padding: 30px 20px;
+    }
+    #feature .feature_cards{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    #feature .feature_cards .single_card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* ======= about section styles start ======= */
+    #about{
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+    #about .about_img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #about .about_text{
+        width: 100%;
+        text-align: center;
+    }
+    #about .about_text .section_heading h2 {
+        width: 100%;
+    }
+    /* ======= services section styles start ======= */
+    #services{
+        padding: 30px 20px;
+    }
+    #services .service_cards{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #services .service_cards .single_card{
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    /* ======= testimonial section styles start ======= */
+    #testimonials{
+        padding: 30px 20px;
+    }
+    #testimonials .section_heading p{
+        width: 100%;
+    }
+    #testimonials .testimonioal_cards{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    #testimonials .testimonioal_cards .single_card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* ======= footer section styles start ======= */
+    .footer{
+        padding: 30px 20px;
+    }
+    .footer .main_footer_area{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .footer .main_footer_area .footer_part_one{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer .main_footer_area .footer_part_one p{
+        width: 100%;
+    }
+
+    .footer .main_footer_area .footer_part_two, .footer .main_footer_area .footer_part_three{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer .main_footer_area .footer_part_four{
+        width: 100%;
+    }
+    .footer .copyright p{ 
+        font-size: 12px;
+    }
+}
+/* ======= small device responsive styles end ======= */
+
+/* ======= medium device responsive styles start ======= */
+@media (min-width: 601px) and (max-width: 768px){
+    /* ======= common styles start ======= */
+    .section_heading p{
+        width: 100%;
+    }
+    
+    /* ======= menubar styles start ======= */
+    .header{
+        height: auto;
+    }
+    .header .menubar{
+        padding: 20px;
+    }
+    .header .menubar .logo{
+        width: auto;
+    }
+    .header .menubar .logo img{
+        width: auto;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .header .menubar .navbar{
+        width: auto;
+    }
+    .header .menubar .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #081158;
+        top: 55px;
+        left: -200%;
+        transition: all 0.5s;
+    }
+    .header .menubar .navbar ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 8px;
+        padding-left: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        padding: 0 0;
+    }
+    .header .menubar .navbar ul li a{
+        font-size: 18px;
+        color: #ffffff;
+    }
+    .header .menubar .header_btn_div{
+        width: auto;
+    }
+    .header .menubar .header_btn_div .header_btn{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    /* ======= hero section styles start ======= */
+    #hero{
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+    #hero .hero_section_text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #hero .hero_section_text h1{
+        font-size: 30px;
+        color: #081158;
+    }
+    #hero .hero_section_img{
+        width: 100%;
+    }
+
+    /* ======= feature section styles start ======= */
+    #feature{
+        padding: 30px 20px;
+    }
+    #feature .feature_cards{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    #feature .feature_cards .single_card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* ======= about section styles start ======= */
+    #about{
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+    #about .about_img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #about .about_text{
+        width: 100%;
+        text-align: center;
+    }
+    #about .about_text .section_heading h2 {
+        width: 100%;
+    }
+
+    /* ======= services section styles start ======= */
+    #services{
+        padding: 30px 20px;
+    }
+    #services .service_cards{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #services .service_cards .single_card{
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    /* ======= testimonial section styles start ======= */
+    #testimonials{
+        padding: 30px 20px;
+    }
+    #testimonials .section_heading p{
+        width: 100%;
+    }
+    #testimonials .testimonioal_cards{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    #testimonials .testimonioal_cards .single_card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* ======= footer section styles start ======= */
+    .footer{
+        padding: 30px 20px;
+    }
+    .footer .main_footer_area{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .footer .main_footer_area .footer_part_one{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer .main_footer_area .footer_part_one p{
+        width: 100%;
+    }
+
+    .footer .main_footer_area .footer_part_two, .footer .main_footer_area .footer_part_three{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer .main_footer_area .footer_part_four{
+        width: 100%;
+    }
+    .footer .copyright p{ 
+        font-size: 12px;
+    }
+}
+/* ======= meidum device responsive styles end ======= */
+
+/* ======= large device responsive styles start ======= */
+@media (min-width: 769px) and (max-width: 992px){
+    /* ======= menubar styles start ======= */
+    .header{
+        height: auto;
+    }
+    .header .menubar{
+        padding: 50px;
+    }
+    .header .menubar .logo{
+        width: auto;
+    }
+    .header .menubar .logo img{
+        width: auto;
+    }
+    .checkbtn{
+        display: block;
+        right: 190px;
+        bottom: 40px;
+    }
+    .header .menubar .navbar{
+        width: auto;
+    }
+    .header .menubar .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #081158;
+        top: 100px;
+        left: -200%;
+        transition: all 0.5s;
+    }
+    .header .menubar .navbar ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 8px;
+        padding-left: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        padding: 0 0;
+    }
+    .header .menubar .navbar ul li a{
+        font-size: 18px;
+        color: #ffffff;
+    }
+    .header .menubar .header_btn_div{
+        width: auto;
+    }
+    .header .menubar .header_btn_div .header_btn{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    /* ======= hero section styles start ======= */
+    #hero{
+        padding: 50px;
+        flex-direction: column;
+    }
+    #hero .hero_section_text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #hero .hero_section_img{
+        width: 100%;
+    }
+
+    /* ======= feature section styles start ======= */
+    #feature{
+        padding: 50px;
+    }
+    #feature .feature_cards .single_card{
+        width: 31%;
+    }
+
+    /* ======= about section styles start ======= */
+    #about{
+        padding: 50px;
+        flex-direction: column;
+    }
+    #about .about_img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #about .about_text{
+        width: 100%;
+        text-align: center;
+    }
+    #about .about_text .section_heading h2{
+        width: 100%;
+    }
+
+    /* ======= services section styles start ======= */
+    #services{
+        padding: 50px;
+    }
+    #services .service_cards{
+        width: 100%;
+    }
+    #services .service_cards .single_card{
+        padding: 20px 10px;
+    }
+
+    /* ======= testimonial section styles start ======= */
+    #testimonials{
+        padding: 50px;
+    }
+    #testimonials .section_heading p{
+        width: 100%;
+    }
+    #testimonials .testimonioal_cards .single_card{
+        padding: 20px 10px;
+    }
+    #testimonials .testimonioal_cards .single_card .text p{
+        font-size: 16px;
+    }
+    #testimonials .testimonioal_cards .single_card .user .user_text{
+        margin-left: 10px;
+    }
+    #testimonials .testimonioal_cards .single_card .user .user_text h5{
+        font-size: 14px;
+    }
+    #testimonials .testimonioal_cards .single_card .user .user_text p{
+        font-size: 14px;
+    }
+
+    /* ======= footer section styles start ======= */
+    .footer{
+        padding: 50px;
+    }
+    .footer .main_footer_area .footer_part_one p{
+        width: 100%;
+    }
+}
+/* ======= large device responsive styles end ======= */
+
+/* ======= extra large device responsive styles start ======= */
+@media (min-width: 993px) and (max-width: 1200px){
+    /* ======= menubar styles start ======= */
+    .header{
+        height: auto;
+    }
+    .header .menubar{
+        padding: 50px;
+    }
+    .header .menubar .navbar ul li{
+        width: 80px;
+    }
+
+    /* ======= hero section styles start ======= */
+    #hero{
+        padding: 50px;
+    }
+    #hero .hero_section_text{
+        width: 45%;
+    }
+    #hero .hero_section_text h1{
+        font-size: 35px;
+    }
+
+    /* ======= feature section styles start ======= */
+    #feature{
+        padding: 50px;
+    }
+
+    /* ======= about section styles start ======= */
+    #about{
+        padding: 50px;
+    }
+
+    /* ======= services section styles start ======= */
+    #services{
+        padding: 50px;
+    }
+
+    /* ======= testimonial section styles start ======= */
+    #testimonials{
+        padding: 50px;
+    }
+    #testimonials .testimonioal_cards .single_card{
+        padding: 35px 20px;
+    }
+
+    /* ======= footer section styles start ======= */
+    .footer{
+        padding: 50px;
+    }
+
+}
+/* ======= extra large device responsive styles end ======= */
